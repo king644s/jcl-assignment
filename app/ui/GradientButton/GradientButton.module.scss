@@ -1,0 +1,17 @@
+.buttonBox {
+  background: linear-gradient(to right, #03007f, #ff2e63, #00c0cc);
+  padding: 2px;
+  border-radius: 50px;
+  .button {
+    transition: 0.5s ease;
+    background-color: #fff;
+    padding: 15px 80px;
+    border-radius: 50px;
+    color: #000;
+    font-size: 16px;
+    line-height: unset;
+    &:hover {
+      color: #fff;
+    }
+  }
+}

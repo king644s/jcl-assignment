@@ -1,0 +1,44 @@
+.careersContainer {
+  margin-top: 100px;
+  h1 {
+    font-size: 54px;
+  }
+  h2 {
+    margin-top: 70px;
+    font-size: 30px;
+  }
+  h3 {
+    margin-top: 25px;
+    font-size: 18px;
+  }
+  .avatarImage {
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 100%;
+  }
+  .quoteParas {
+    position: relative;
+    &:before {
+      content: url("../../../public/careers/quotes.png");
+      position: absolute;
+      top: -30px;
+      left: -30px;
+    }
+    p {
+      &:not(:last-of-type) {
+        margin-bottom: 30px;
+      }
+      &:last-of-type {
+        position: relative;
+        display: inline-block;
+        &:after {
+          content: url("../../../public/careers/quotes.png");
+          position: absolute;
+          bottom: 0px;
+          right: -30px;
+          transform: scaleX(-1);
+        }
+      }
+    }
+  }
+}

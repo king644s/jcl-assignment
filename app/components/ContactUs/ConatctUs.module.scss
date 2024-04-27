@@ -1,0 +1,30 @@
+.contactContainer {
+    margin-top: 100px;
+    h1{
+        font-size: 54px;
+    }
+    h2{
+        margin-top: 70px;
+        font-size: 34px;
+    }
+    h3{
+        margin-top: 25px;
+        font-size: 22px;
+    }
+  .contactElemet {
+    aspect-ratio: 9/16;
+  }
+  .listBox {
+    list-style: none;
+    .listItem {
+      color: #344054;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+      a {
+        color: #344054;
+        text-decoration: none;
+      }
+    }
+  }
+}
