@@ -1,14 +1,24 @@
 import { Button, ButtonProps } from "@mui/material";
-import React, { FC, ReactNode } from "react";
+import React, { CSSProperties, FC, HtmlHTMLAttributes, ReactNode } from "react";
 import styles from "./GradientButton.module.scss";
 
 type Props = {
   children: ReactNode;
+  boxStyles?: CSSProperties;
+  boxClassName?: string;
 } & ButtonProps;
 
-const GradientButton: FC<Props> = ({ children, ...otherProps }) => {
+const GradientButton: FC<Props> = ({
+  children,
+  boxStyles,
+  boxClassName,
+  ...otherProps
+}) => {
   return (
-    <div className={styles.buttonBox}>
+    <div
+      className={`${styles.buttonBox} ${boxClassName ? boxClassName : ""}`}
+      style={boxStyles}
+    >
       <Button className={styles.button} {...otherProps}>
         {children}
       </Button>
@@ -16,4 +26,4 @@ const GradientButton: FC<Props> = ({ children, ...otherProps }) => {
   );
 };
 
-export default GradientButton
+export default GradientButton;

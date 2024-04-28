@@ -1,0 +1,48 @@
+.weAreFoldMain {
+  background-image: url("../../../../public/home/weAreFold/bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  h2 {
+    font-size: 75px;
+    color: #000;
+    text-transform: uppercase;
+  }
+  .titleSwiper {
+    height: 100px;
+  }
+  .bodyText {
+    margin-top: 41px;
+    max-width: 1000px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #4a4a4a;
+    text-align: justify;
+  }
+  .butonBox {
+    .buttonText {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1d1d1f;
+      margin-right: 5px;
+    }
+    &:hover {
+      .buttonText,
+      .buttonImage {
+        color: #fff;
+      }
+    }
+  }
+  @keyframes rotateAnimation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .cursorAnimation {
+    animation: rotateAnimation 5s linear infinite;
+    scale: 1.5;
+  }
+}

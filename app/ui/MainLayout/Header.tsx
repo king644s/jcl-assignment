@@ -17,7 +17,9 @@ const Header = (props: Props) => {
           className={styles.headerMain}
         >
           <Grid item xs={4}>
-            <Image src={JCL} alt="JCL Logo" width={285} height={46} />
+            <Link href="/">
+              <Image src={JCL} alt="JCL Logo" width={285} height={46} />
+            </Link>
           </Grid>
           <Grid
             item
@@ -28,16 +30,16 @@ const Header = (props: Props) => {
             columnSpacing={5}
           >
             <Grid item>
-              <Link href="">Services</Link>
+              <Link href="#">Services</Link>
             </Grid>
             <Grid item>
-              <Link href="">Our Work</Link>
+              <Link href="/our-work">Our Work</Link>
             </Grid>
             <Grid item>
-              <Link href="">Careers</Link>
+              <Link href="/careers">Careers</Link>
             </Grid>
             <Grid item>
-              <Link href="">Contact Us</Link>
+              <Link href="/contact-us">Contact Us</Link>
             </Grid>
           </Grid>
         </Grid>

@@ -7,6 +7,7 @@ import fbIcon from "@/public/common/fb-icon.svg";
 import ytIcon from "@/public/common/yt-icon.svg";
 import gramIcon from "@/public/common/gram-icon.svg";
 import xIcon from "@/public/common/x-icon.svg";
+import Link from "next/link";
 
 type Props = {};
 
@@ -16,7 +17,7 @@ const Footer = (props: Props) => {
       <Container fixed>
         <Grid container alignItems="center" justifyContent="space-between">
           <Grid item xs={3}>
-            <a href="">
+            <Link href="/">
               <Image
                 src={footerLogo}
                 alt="jcl-logo"
@@ -24,7 +25,7 @@ const Footer = (props: Props) => {
                 width={134}
                 className={styles.logoImg}
               />
-            </a>
+            </Link>
           </Grid>
           <Grid
             item

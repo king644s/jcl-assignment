@@ -1,17 +1,24 @@
 .ourWorkContainer {
   margin-top: 100px;
+  margin-bottom: 200px;
   h1 {
     font-size: 54px;
+  }
+  .allProjectsButton {
+    font-size: 22px;
+    color: #000;
   }
   .workCardBox {
     position: relative;
     overflow: hidden;
+    aspect-ratio: 1;
     .workCardOne {
       display: flex;
       align-items: center;
       justify-content: center;
       background-color: #5092de;
       aspect-ratio: 1;
+      width: 100%;
     }
     .workCardTwo {
       transition: 0.5s ease;
