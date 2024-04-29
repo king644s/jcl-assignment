@@ -39,8 +39,10 @@ const FormSelect: FC<Props> = ({
               {placeholder}
             </MenuItem>
             {options && options.length > 0 ? (
-              options.map((item) => (
-                <MenuItem value={item.value}>{item.label}</MenuItem>
+              options.map((item, index) => (
+                <MenuItem value={item.value} key={index}>
+                  {item.label}
+                </MenuItem>
               ))
             ) : (
               <MenuItem>no options</MenuItem>

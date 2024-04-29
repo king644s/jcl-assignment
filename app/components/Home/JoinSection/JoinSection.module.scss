@@ -1,0 +1,15 @@
+.joinSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 155px 0 71px;
+  gap: 44px;
+  h2 {
+    font-size: 50px;
+  }
+  h3 {
+    font-size: 24px;
+    padding: 5px 10px;
+  }
+}

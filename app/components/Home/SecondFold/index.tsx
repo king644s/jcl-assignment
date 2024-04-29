@@ -19,50 +19,50 @@ const SecondFold = (props: Props) => {
         spaceBetween={0}
         centeredSlides
         allowTouchMove={false}
-        slidesPerView={3}
+        slidesPerView={"auto"}
         freeMode={true}
         speed={1000}
         autoplay={{ delay: 0, disableOnInteraction: false }}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
+        // onSlideChange={() => console.log("slide change")}
+        // onSwiper={(swiper) => console.log(swiper)}
         modules={[Autoplay, Parallax]}
         loop
       >
-        <SwiperSlide style={{ display: "inline-block" }}>
+        <SwiperSlide style={{ width: 620 }}>
           <h2
             className={`${Archivo.className} ${styles.sliderText} ${styles.sliderTextActive}`}
           >
             Creative*
           </h2>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide style={{ width: 620 }}>
           <h2 className={`${Archivo.className} ${styles.sliderText}`}>
             Creative*
           </h2>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide style={{ width: 620 }}>
           <h2 className={`${Archivo.className} ${styles.sliderText} `}>
             Creative*
           </h2>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide style={{ width: 620 }}>
           <h2
             className={`${Archivo.className} ${styles.sliderText} ${styles.sliderTextActive}`}
           >
             Creative*
           </h2>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide style={{ width: 620 }}>
           <h2 className={`${Archivo.className} ${styles.sliderText}`}>
             Creative*
           </h2>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide style={{ width: 620 }}>
           <h2 className={`${Archivo.className} ${styles.sliderText}`}>
             Creative*
           </h2>
         </SwiperSlide>
-        </Swiper>
+      </Swiper>
       <Swiper
         spaceBetween={0}
         centeredSlides
@@ -72,8 +72,8 @@ const SecondFold = (props: Props) => {
         speed={1000}
         dir="rtl"
         autoplay={{ delay: 0, disableOnInteraction: false }}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
+        // onSlideChange={() => console.log("slide change")}
+        // onSwiper={(swiper) => console.log(swiper)}
         modules={[Autoplay, Parallax]}
         loop
       >
@@ -120,8 +120,8 @@ const SecondFold = (props: Props) => {
         freeMode={true}
         speed={1000}
         autoplay={{ delay: 0, disableOnInteraction: false }}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
+        // onSlideChange={() => console.log("slide change")}
+        // onSwiper={(swiper) => console.log(swiper)}
         modules={[Autoplay, Parallax]}
         loop
       >

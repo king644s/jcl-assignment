@@ -1,0 +1,21 @@
+.socialMediaFeed {
+  margin-top: 100px;
+  padding: 100px 0 79px;
+  .titleBox {
+    margin-bottom: 106px;
+    h2 {
+      font-size: 50px;
+      text-transform: uppercase;
+    }
+    h3 {
+      text-transform: uppercase;
+      font-size: 40px;
+      font-weight: 800;
+    }
+  }
+  .viewMore {
+    font-size: 20px;
+    color: #424242;
+    text-decoration: none;
+  }
+}

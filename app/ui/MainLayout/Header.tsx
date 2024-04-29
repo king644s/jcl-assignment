@@ -30,7 +30,7 @@ const Header = (props: Props) => {
             columnSpacing={5}
           >
             <Grid item>
-              <Link href="#">Services</Link>
+              <Link href="/#services">Services</Link>
             </Grid>
             <Grid item>
               <Link href="/our-work">Our Work</Link>

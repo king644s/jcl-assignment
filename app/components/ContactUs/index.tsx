@@ -44,7 +44,7 @@ const ConatctUs = (props: Props) => {
   };
   return (
     <>
-      <Container maxWidth={"xl"} className={styles.contactContainer}>
+      <Container fixed className={styles.contactContainer}>
         <Box>
           <h1 className={archivoBlack.className}>CONTACT US</h1>
           <Divider />
@@ -134,7 +134,14 @@ const ConatctUs = (props: Props) => {
         </FormProvider>
         <Grid container>
           <Grid item xs={6}>
-            <Image src={ContactElement2} alt="People working in a team" />
+            <Image
+              src={ContactElement2}
+              alt="People working in a team"
+              style={{
+                width: "100%",
+                height: "auto",
+              }}
+            />
           </Grid>
           <Grid
             item

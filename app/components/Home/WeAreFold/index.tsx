@@ -42,6 +42,7 @@ const weAreTiltles = [
 const WeAreFold = (props: Props) => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [cursorHovered, setCursorHovered] = useState(false);
+  const [readMore, setReadMore] = useState(false);
 
   const handleMouseMove = (event: MouseEvent) => {
     setCursorPosition({ x: event.clientX, y: event.clientY });
@@ -65,8 +66,12 @@ const WeAreFold = (props: Props) => {
     transform: `scale(1.5) rotate(0deg)`,
   };
 
+  const handleRead = () => {
+    setReadMore((prev) => !prev);
+  };
+
   return (
-    <section className={styles.weAreFoldMain}>
+    <section className={styles.weAreFoldMain} id="services">
       <div
         onMouseMove={handleMouseMove}
         onMouseEnter={handleMouseEnter}
@@ -127,17 +132,46 @@ const WeAreFold = (props: Props) => {
             <Grid item xs={7}>
               <p className={`${montserrat.className} ${styles.bodyText}`}>
                 Step into the realm of JCL aka Jio Creative Labs, where
-                imagination runs wild and creativity takes the center stage.
-                We're not your average agency; we're the misfits who bring the
-                funk to your brand.
+                imagination runs wild and creativity takes the center stage. We
+                &apos; re not your average agency; we &apos; re the misfits who
+                bring the funk to your brand.
               </p>
+              {readMore ? (
+                <>
+                  <p className={`${montserrat.className} ${styles.bodyText}`}>
+                    We &apos; re the rule-breakers, the rebels with a purpose,
+                    the architects of engagement, the superheroes of
+                    storytelling, the ninjas of social media the wizards of
+                    innovation, and the maestros of turning &quot; meh &quot;
+                    into &quot; heck yeah! &quot; We believe that marketing
+                    should be anything but boring. With the mighty force of
+                    India &apos; s largest private sector company fueling our
+                    passion, we &apos; re here to set your brand on fire with
+                    our unmatched, new-age expertise.
+                  </p>
+                  <p className={`${montserrat.className} ${styles.bodyText}`}>
+                    We &apos; re not just another agency-cum-production-house.
+                    In a nutshell, we &apos; re a full-service powerhouse that
+                    lives and breathes marketing. From mainline advertising to
+                    digital wizardry, from social media mastery to mind-blowing
+                    branded content, we &apos; ve got you covered. We &apos; re
+                    even dabbling in IPs, OTT shows, events, influencer
+                    outreach, and mind-boggling technology-driven content. Trust
+                    us, we &apos; re everywhere! Think of us as your 360,
+                    one-stop-shop for all things awesome.
+                  </p>
+                </>
+              ) : (
+                ""
+              )}
               <GradientButton
                 boxStyles={{ marginTop: "20px" }}
                 boxClassName={styles.butonBox}
                 style={{ padding: "5px 20px" }}
+                onClick={handleRead}
               >
                 <h3 className={`${montserrat.className} ${styles.buttonText}`}>
-                  Read More
+                  {readMore ? "Read Less" : "Read More"}
                 </h3>
                 <Image
                   src={DownArrow}
@@ -145,6 +179,7 @@ const WeAreFold = (props: Props) => {
                   height={20}
                   width={20}
                   className={styles.buttonImage}
+                  style={readMore ? { rotate: "180deg" } : {}}
                 />
               </GradientButton>
             </Grid>
