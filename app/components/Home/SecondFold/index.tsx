@@ -56,7 +56,7 @@ const SecondFold = (props: Props) => {
       ease: "power1.inOut",
     });
 
-    tlCan.to(".image-floatn", 3, { y: "-=50", ease: "power1.inOut" });
+    tlCan.to(".image-float", 3, { y: "-=50", ease: "power1.inOut" });
 
     tlCan.to(".image-float", 3, { y: "+=50", ease: "power1.inOut" });
 

@@ -17,7 +17,7 @@ const archivo = Archivo_Black({ weight: "400", subsets: ["latin"] });
 const montserrat = Montserrat({ weight: "600", subsets: ["latin"] });
 const sourceSansPro = Source_Sans_3({ weight: "700", subsets: ["latin"] });
 
-gsap.registerPlugin(ScrollTrigger, useGSAP);
+gsap.registerPlugin(useGSAP);
 
 const JackOfAll = (props: Props) => {
   const container = useRef(null);
@@ -42,6 +42,63 @@ const JackOfAll = (props: Props) => {
   //   },
   //   { scope: container }
   // );
+
+  const FloatGsap = () => {
+    const tlCan = gsap.timeline({ repeat: -1 });
+    tlCan.to(".image-float", {
+      translateX: "+=5",
+      translateY: "+=7",
+      rotation: "+=4",
+      ease: "power1.inOut",
+    });
+    tlCan.to(".image-float", {
+      y: "-=30",
+      x: "+=20",
+      rotation: "-=5",
+      ease: "power1.inOut",
+    });
+
+    //move down right
+    tlCan.to(".image-float", 2, {
+      y: "+=30",
+      x: "-=20",
+      rotation: "-=5",
+      ease: "power1.inOut",
+    });
+
+    tlCan.to(".image-float", 3, {
+      y: "-=20",
+      rotation: "+=5",
+      ease: "power1.inOut",
+    });
+
+    tlCan.to(".image-float", 3, {
+      y: "+=20",
+      rotation: "+=5",
+      ease: "power1.inOut",
+    });
+
+    tlCan.to(".image-float", 3, { y: "-=50", ease: "power1.inOut" });
+
+    tlCan.to(".image-float", 3, { y: "+=50", ease: "power1.inOut" });
+
+    tlCan.to(".image-float", 3, { y: "-=30", ease: "power1.inOut" });
+
+    tlCan.to(".image-float", 3, { y: "+=30", ease: "power1.inOut" });
+
+    tlCan.to(".image-float", 2, { y: "-=30", ease: "power1.inOut" });
+
+    tlCan.to(".image-float", 2, { y: "+=30", ease: "power1.inOut" });
+  };
+
+  useGSAP(
+    () => {
+      // gsap code here...
+      FloatGsap();
+    },
+    { scope: container }
+  );
+
   return (
     <section className={styles.JackOfAll} ref={container}>
       <Container fixed>
@@ -59,6 +116,7 @@ const JackOfAll = (props: Props) => {
               src={Element}
               alt="jacl of all element"
               style={{ width: "100%", height: "auto" }}
+              className="image-float"
             />
           </Grid>
           <Grid
