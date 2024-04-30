@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { LegacyRef, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Typography } from "@mui/material";
@@ -19,15 +19,66 @@ type Props = {};
 gsap.registerPlugin(useGSAP);
 
 const SecondFold = (props: Props) => {
-  // const container = useRef();
+  const container = useRef(null);
 
-  useGSAP(() => {
-    // gsap code here...
-    gsap.to(".box", { x: 360 }); // <-- automatically reverted
-  }, {});
+  const FloatGsap = () => {
+    const tlCan = gsap.timeline({ repeat: -1 });
+    tlCan.to(".image-float", {
+      translateX: "+=5",
+      translateY: "+=7",
+      rotation: "+=4",
+      ease: "power1.inOut",
+    });
+    tlCan.to(".image-float", {
+      y: "-=30",
+      x: "+=20",
+      rotation: "-=5",
+      ease: "power1.inOut",
+    });
+
+    //move down right
+    tlCan.to(".image-float", 2, {
+      y: "+=30",
+      x: "-=20",
+      rotation: "-=5",
+      ease: "power1.inOut",
+    });
+
+    tlCan.to(".image-float", 3, {
+      y: "-=20",
+      rotation: "+=5",
+      ease: "power1.inOut",
+    });
+
+    tlCan.to(".image-float", 3, {
+      y: "+=20",
+      rotation: "+=5",
+      ease: "power1.inOut",
+    });
+
+    tlCan.to(".image-floatn", 3, { y: "-=50", ease: "power1.inOut" });
+
+    tlCan.to(".image-float", 3, { y: "+=50", ease: "power1.inOut" });
+
+    tlCan.to(".image-float", 3, { y: "-=30", ease: "power1.inOut" });
+
+    tlCan.to(".image-float", 3, { y: "+=30", ease: "power1.inOut" });
+
+    tlCan.to(".image-float", 2, { y: "-=30", ease: "power1.inOut" });
+
+    tlCan.to(".image-float", 2, { y: "+=30", ease: "power1.inOut" });
+  };
+
+  useGSAP(
+    () => {
+      // gsap code here...
+      FloatGsap();
+    },
+    { scope: container }
+  );
 
   return (
-    <section className={styles.secondFoldCont}>
+    <section className={styles.secondFoldCont} ref={container}>
       <Swiper
         spaceBetween={0}
         centeredSlides
@@ -178,7 +229,7 @@ const SecondFold = (props: Props) => {
         alt="second fold image"
         width={750}
         height={645}
-        className={styles.element}
+        className={`${styles.element} image-float`}
       />
     </section>
   );
