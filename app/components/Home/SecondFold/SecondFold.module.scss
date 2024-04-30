@@ -1,12 +1,24 @@
-.sliderText {
-  display: inline-block;
-  font-size: 100px;
-  text-transform: uppercase;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  color: #fff;
-}
-
-.sliderTextActive {
-  color: black;
+.secondFoldCont {
+  margin: 159px 0 0;
+  padding: 137px 0 157px;
+  position: relative;
+  .sliderText {
+    z-index: 2;
+    display: inline-block;
+    font-size: 100px;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: #fff;
+  }
+  .sliderTextActive {
+    color: black;
+  }
+  .element {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
 }
