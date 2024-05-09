@@ -92,36 +92,36 @@ const SecondFold = (props: Props) => {
         modules={[Autoplay, Parallax]}
         loop
       >
-        <SwiperSlide style={{ width: 620 }}>
+        <SwiperSlide style={{ width: "auto" }}>
           <h2
             className={`${Archivo.className} ${styles.sliderText} ${styles.sliderTextActive}`}
           >
             Creative*
           </h2>
         </SwiperSlide>
-        <SwiperSlide style={{ width: 620 }}>
+        <SwiperSlide style={{ width: "auto" }}>
           <h2 className={`${Archivo.className} ${styles.sliderText}`}>
             Creative*
           </h2>
         </SwiperSlide>
-        <SwiperSlide style={{ width: 620 }}>
+        <SwiperSlide style={{ width: "auto" }}>
           <h2 className={`${Archivo.className} ${styles.sliderText} `}>
             Creative*
           </h2>
         </SwiperSlide>
-        <SwiperSlide style={{ width: 620 }}>
+        <SwiperSlide style={{ width: "auto" }}>
           <h2
             className={`${Archivo.className} ${styles.sliderText} ${styles.sliderTextActive}`}
           >
             Creative*
           </h2>
         </SwiperSlide>
-        <SwiperSlide style={{ width: 620 }}>
+        <SwiperSlide style={{ width: "auto" }}>
           <h2 className={`${Archivo.className} ${styles.sliderText}`}>
             Creative*
           </h2>
         </SwiperSlide>
-        <SwiperSlide style={{ width: 620 }}>
+        <SwiperSlide style={{ width: "auto" }}>
           <h2 className={`${Archivo.className} ${styles.sliderText}`}>
             Creative*
           </h2>
@@ -141,36 +141,36 @@ const SecondFold = (props: Props) => {
         modules={[Autoplay, Parallax]}
         loop
       >
-        <SwiperSlide style={{ width: 750 }}>
+        <SwiperSlide style={{ width: "auto" }}>
           <h2
             className={`${Archivo.className} ${styles.sliderText} ${styles.sliderTextActive}`}
           >
             Disruptive*
           </h2>
         </SwiperSlide>
-        <SwiperSlide style={{ width: 750 }}>
+        <SwiperSlide style={{ width: "auto" }}>
           <h2 className={`${Archivo.className} ${styles.sliderText}`}>
             Disruptive*
           </h2>
         </SwiperSlide>
-        <SwiperSlide style={{ width: 750 }}>
+        <SwiperSlide style={{ width: "auto" }}>
           <h2 className={`${Archivo.className} ${styles.sliderText}  `}>
             Disruptive*
           </h2>
         </SwiperSlide>
-        <SwiperSlide style={{ width: 750 }}>
+        <SwiperSlide style={{ width: "auto" }}>
           <h2
             className={`${Archivo.className} ${styles.sliderText} ${styles.sliderTextActive}`}
           >
             Disruptive*
           </h2>
         </SwiperSlide>
-        <SwiperSlide style={{ width: 750 }}>
+        <SwiperSlide style={{ width: "auto" }}>
           <h2 className={`${Archivo.className} ${styles.sliderText} `}>
             Disruptive*
           </h2>
         </SwiperSlide>
-        <SwiperSlide style={{ width: 750 }}>
+        <SwiperSlide style={{ width: "auto" }}>
           <h2 className={`${Archivo.className} ${styles.sliderText} `}>
             Disruptive*
           </h2>
@@ -189,36 +189,36 @@ const SecondFold = (props: Props) => {
         modules={[Autoplay, Parallax]}
         loop
       >
-        <SwiperSlide style={{ width: 750 }}>
+        <SwiperSlide style={{ width: "auto" }}>
           <h2
             className={`${Archivo.className} ${styles.sliderText} ${styles.sliderTextActive}`}
           >
             Innovation*
           </h2>
         </SwiperSlide>
-        <SwiperSlide style={{ width: 750 }}>
+        <SwiperSlide style={{ width: "auto" }}>
           <h2 className={`${Archivo.className} ${styles.sliderText}`}>
             Innovation*
           </h2>
         </SwiperSlide>
-        <SwiperSlide style={{ width: 750 }}>
+        <SwiperSlide style={{ width: "auto" }}>
           <h2 className={`${Archivo.className} ${styles.sliderText} `}>
             Innovation*
           </h2>
         </SwiperSlide>
-        <SwiperSlide style={{ width: 750 }}>
+        <SwiperSlide style={{ width: "auto" }}>
           <h2
             className={`${Archivo.className} ${styles.sliderText} ${styles.sliderTextActive}`}
           >
             Innovation*
           </h2>
         </SwiperSlide>
-        <SwiperSlide style={{ width: 750 }}>
+        <SwiperSlide style={{ width: "auto" }}>
           <h2 className={`${Archivo.className} ${styles.sliderText}`}>
             Innovation*
           </h2>
         </SwiperSlide>
-        <SwiperSlide style={{ width: 750 }}>
+        <SwiperSlide style={{ width: "auto" }}>
           <h2 className={`${Archivo.className} ${styles.sliderText}`}>
             Innovation*
           </h2>
@@ -227,8 +227,8 @@ const SecondFold = (props: Props) => {
       <Image
         src={element}
         alt="second fold image"
-        width={750}
-        height={645}
+        // width={750}
+        // height={645}
         className={`${styles.element} image-float`}
       />
     </section>

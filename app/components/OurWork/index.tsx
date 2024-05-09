@@ -205,7 +205,7 @@ const OurWork = (props: Props) => {
         marginTop={3}
       >
         <Grid item container xs={12} columnSpacing={3}>
-          <Grid item xs={4}>
+          <Grid item xs={12} md={4}>
             <FormControl fullWidth>
               <InputLabel id="demo-simple-select-label">
                 Type of Client
@@ -224,7 +224,7 @@ const OurWork = (props: Props) => {
               </Select>
             </FormControl>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={12} md={4}>
             <FormControl fullWidth>
               <InputLabel id="demo-simple-select-label">
                 Type of Work
@@ -245,12 +245,18 @@ const OurWork = (props: Props) => {
           </Grid>
           <Grid
             item
-            xs={4}
+            xs={12}
+            md={4}
             container
             alignItems="center"
             justifyContent="center"
           >
-            <Button onClick={handleAllProducts} className={styles.allProjectsButton}>All Projects</Button>
+            <Button
+              onClick={handleAllProducts}
+              className={styles.allProjectsButton}
+            >
+              All Projects
+            </Button>
           </Grid>
         </Grid>
         {workData && workData.length > 0 ? (
@@ -260,7 +266,9 @@ const OurWork = (props: Props) => {
                 key={index}
                 item
                 container
-                xs={3.85}
+                xs={12}
+                sm={5.8}
+                md={3.8}
                 className={styles.workCardBox}
               >
                 <Paper className={styles.workCardOne}>

@@ -20,5 +20,16 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+    aspect-ratio: 6/5;
+    object-fit: contain;
+  }
+  @media screen and (max-width: 520px) {
+    .element {
+      width: 250px;
+      // aspect-ratio: 1;
+    }
+    .sliderText{
+      font-size: 40px;
+    }
   }
 }

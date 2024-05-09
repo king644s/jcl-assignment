@@ -71,8 +71,16 @@ const Careers = (props: Props) => {
         </Box>
         <FormProvider {...method}>
           <form onSubmit={handleSubmit(onSubmit)}>
-            <Grid container alignItems="flex-start" >
-              <Grid item container xs={6} rowSpacing={3} columnSpacing={4}>
+            <Grid container alignItems="flex-start">
+              <Grid
+                item
+                container
+                xs={12}
+                md={6}
+                rowSpacing={3}
+                columnSpacing={4}
+                order={{ xs: 1, lg: 0 }}
+              >
                 <Grid item xs={12} marginBottom={5}>
                   <Box>
                     <h2 className={sourceSansPro.className}>
@@ -83,14 +91,14 @@ const Careers = (props: Props) => {
                     </h3>
                   </Box>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12} lg={12}>
                   <FormTextField
                     name="firstName"
                     label="First Name"
                     placeholder="First name"
                   />
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12} lg={12}>
                   <FormTextField
                     name="lastName"
                     label="Last Name"
@@ -188,10 +196,13 @@ const Careers = (props: Props) => {
               </Grid>
               <Grid
                 item
-                xs={6}
+                // xs={false}
+                md={6}
+                order={{ xs: 0, md: 1 }}
                 container
                 alignItems="center"
                 justifyContent="flex-end"
+                sx={{ display: { xs: "none", md: "flex" } }}
               >
                 <Image
                   style={{
@@ -215,7 +226,7 @@ const Careers = (props: Props) => {
           alignItems="center"
           justifyContent="center"
         >
-          <Grid item xs={6}>
+          <Grid item xs={12} md={5}>
             <Image
               src={joinUsElement}
               alt="join us element"
@@ -223,16 +234,19 @@ const Careers = (props: Props) => {
                 maxWidth: "600px",
                 aspectRatio: 1,
                 width: "100%",
+                objectFit: "contain",
               }}
             />
           </Grid>
           <Grid
             item
-            xs={6}
+            xs={12}
+            md={5}
             container
             alignItems="center"
             justifyContent="center"
             rowGap={5}
+            padding={5}
           >
             <Grid item xs={12}>
               <div className={styles.quoteParas}>

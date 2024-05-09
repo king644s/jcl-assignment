@@ -19,22 +19,22 @@ const SocialMediaFeed = (props: Props) => {
             check out our latest Social posts
           </h3>
         </div>
-        <Grid container>
-          <Grid item xs={4}>
+        <Grid container alignItems="center" justifyContent="center">
+          <Grid item xs={12} md={6} lg={4}>
             <InstagramEmbed
               url="https://www.instagram.com/p/C5AnFxrRZTA/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
               width={328}
               captioned
             />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={12} md={6} lg={4}>
             <InstagramEmbed
               url="https://www.instagram.com/p/C5DY-5NxOrL/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
               width={328}
               captioned
             />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={12} md={6} lg={4}>
             <InstagramEmbed
               url="https://www.instagram.com/p/C4-S0ejRlXw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
               width={328}

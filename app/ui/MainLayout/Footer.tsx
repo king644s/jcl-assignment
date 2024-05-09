@@ -15,8 +15,13 @@ const Footer = (props: Props) => {
   return (
     <footer className={styles.footer}>
       <Container fixed>
-        <Grid container alignItems="center" justifyContent="space-between">
-          <Grid item xs={3}>
+        <Grid
+          container
+          alignItems="center"
+          justifyContent="space-between"
+          rowSpacing={{ xs: 5, lg: 0 }}
+        >
+          <Grid item xs={12}>
             <Link href="/">
               <Image
                 src={footerLogo}
@@ -29,15 +34,16 @@ const Footer = (props: Props) => {
           </Grid>
           <Grid
             item
-            xs={5}
+            xs={12}
             container
             alignItems="center"
-            justifyContent="center"
+            justifyContent={{ xs: "flex-start", lg: "center" }}
             flex={1}
+            order={{ xs: 2, lg: 1 }}
           >
             <h3>© {new Date().getFullYear()}, Jio Creative Labs</h3>
           </Grid>
-          <Grid item xs={3} container>
+          <Grid item xs={12} container order={{ xs: 1, lg: 2 }}>
             <Grid item xs={3}>
               <a href="">
                 <Image src={fbIcon} alt="fb-icon" height={35} width={35} />

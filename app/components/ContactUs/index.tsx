@@ -124,15 +124,22 @@ const ConatctUs = (props: Props) => {
           <FormProvider {...method}>
             <form onSubmit={handleSubmit(onSubmit)}>
               <Grid container alignItems="center">
-                <Grid item container xs={6} rowSpacing={3} columnSpacing={4}>
-                  <Grid item xs={6}>
+                <Grid
+                  item
+                  container
+                  xs={12}
+                  md={6}
+                  rowSpacing={3}
+                  columnSpacing={4}
+                >
+                  <Grid item xs={12} md={6}>
                     <FormTextField
                       name="firstName"
                       label="First Name"
                       placeholder="First name"
                     />
                   </Grid>
-                  <Grid item xs={6}>
+                  <Grid item xs={12} md={6}>
                     <FormTextField
                       name="lastName"
                       label="Last Name"
@@ -179,7 +186,8 @@ const ConatctUs = (props: Props) => {
                 </Grid>
                 <Grid
                   item
-                  xs={6}
+                  md={6}
+                  sx={{ display: { xs: "none", md: "flex" } }}
                   container
                   alignItems="center"
                   justifyContent="center"
@@ -195,7 +203,7 @@ const ConatctUs = (props: Props) => {
             </form>
           </FormProvider>
           <Grid container>
-            <Grid item xs={6}>
+            <Grid item xs={12} md={6}>
               <Image
                 src={ContactElement2}
                 alt="People working in a team"
@@ -207,7 +215,8 @@ const ConatctUs = (props: Props) => {
             </Grid>
             <Grid
               item
-              xs={6}
+              xs={12}
+              md={6}
               container
               alignItems="center"
               justifyContent="center"
@@ -219,10 +228,10 @@ const ConatctUs = (props: Props) => {
                     alignItems="center"
                     justifyContent="flex-start"
                   >
-                    <Grid item xs={1}>
+                    <Grid item xs={2} md={1}>
                       <Image src={LocationIcon} alt="icon" />
                     </Grid>
-                    <Grid item className={inter.className} xs={11}>
+                    <Grid item className={inter.className} xs={10} md={11}>
                       2nd Floor, 4th North Avenue, Maker Maxity, Bandra Kurla
                       Complex, Mumbai, Maharashtra 400051
                     </Grid>
@@ -234,10 +243,10 @@ const ConatctUs = (props: Props) => {
                     alignItems="center"
                     justifyContent="flex-start"
                   >
-                    <Grid item xs={1}>
+                    <Grid item xs={2} md={1}>
                       <Image src={PhoneIcon} alt="icon" />
                     </Grid>
-                    <Grid item className={inter.className} xs={11}>
+                    <Grid item className={inter.className} xs={10} md={11}>
                       <a href="tel:02235554000">02235554000</a>
                     </Grid>
                   </Grid>
@@ -248,10 +257,10 @@ const ConatctUs = (props: Props) => {
                     alignItems="center"
                     justifyContent="flex-start"
                   >
-                    <Grid item xs={1}>
+                    <Grid item xs={2} md={1}>
                       <Image src={EmailIcon} alt="icon" />
                     </Grid>
-                    <Grid item className={inter.className} xs={11}>
+                    <Grid item className={inter.className} xs={10} md={11}>
                       <a href="mailto:akshat.bhagat@jiocreativelabs.com">
                         akshat.bhagat@jiocreativelabs.com
                       </a>

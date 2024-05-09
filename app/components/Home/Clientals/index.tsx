@@ -23,12 +23,24 @@ const Clientals = (props: Props) => {
       </Container>
       <Swiper
         loop
-        slidesPerView={7}
+        // slidesPerView={{}}
         allowTouchMove={false}
         freeMode={true}
         speed={1000}
         autoplay={{ delay: 0, disableOnInteraction: false }}
         modules={[Autoplay]}
+        breakpoints={{
+          0: {
+            slidesPerView: 2.5,
+            spaceBetween: 10,
+          },
+          520: {
+            slidesPerView: 5,
+          },
+          900: {
+            slidesPerView: 7,
+          },
+        }}
       >
         <SwiperSlide>
           <div className={styles.clientImageBox}>
