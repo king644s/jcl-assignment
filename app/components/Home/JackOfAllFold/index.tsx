@@ -111,7 +111,7 @@ const JackOfAll = (props: Props) => {
           competitors scratching their heads. We’ve got you covered, literally!
         </h3>
         <Grid container marginTop={10}>
-          <Grid item xs={6}>
+          <Grid item xs={12} lg={6}>
             <Image
               src={Element}
               alt="jacl of all element"
@@ -123,7 +123,7 @@ const JackOfAll = (props: Props) => {
             item
             container
             className={`tagContainer ${styles.scrollContainer}`}
-            xs={6}
+            xs={12} lg={6}
             justifyContent="center"
             alignItems="flex-start"
           >

@@ -98,6 +98,7 @@ const WeAreFold = (props: Props) => {
                 alt="down-arrow"
                 height={155}
                 width={155}
+                className={styles.arrowImage}
               />
             </Grid>
             <Grid item xs={12}>
@@ -129,7 +130,7 @@ const WeAreFold = (props: Props) => {
                 })}
               </Swiper>
             </Grid>
-            <Grid item xs={7}>
+            <Grid item xs={12} lg={7}>
               <p className={`${montserrat.className} ${styles.bodyText}`}>
                 Step into the realm of JCL aka Jio Creative Labs, where
                 imagination runs wild and creativity takes the center stage. We

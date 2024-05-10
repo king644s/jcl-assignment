@@ -18,4 +18,17 @@
     color: #424242;
     text-decoration: none;
   }
+  @media screen and (max-width: 520px) {
+    margin: 0;
+    padding: 50px 0;
+    .titleBox {
+      margin-bottom: 50px;
+      h2{
+        font-size: 36px;
+      }
+      h3{
+        font-size: 26px;
+      }
+    }
+  }
 }

@@ -23,7 +23,7 @@ const VideoSection = (props: Props) => {
           loop
             width="100%"
             height="auto"
-            controls
+            // controls
             playing={playing}
             muted
             url={

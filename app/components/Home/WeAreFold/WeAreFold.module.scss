@@ -53,4 +53,75 @@
     animation: rotateAnimation 5s linear infinite;
     scale: 1.5;
   }
+
+  @media screen and (max-width: 520px) {
+    margin: 50px 0px;
+    min-height: unset;
+    h2{
+      font-size: 34px;
+    }
+    .arrowImage{
+      aspect-ratio: 1;
+      width: 50px;
+      height: 50px;
+    }
+    .titleSwiper{
+      height: 40px;
+    }
+    .bodyText{
+      &:first-of-type {
+        margin-top: 10px;
+      }
+      &:not(:last-of-type) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    margin: 100px 0px;
+    min-height: unset;
+    h2{
+      font-size: 48px;
+    }
+    .arrowImage{
+      aspect-ratio: 1;
+      width: 70px;
+      height: 70px;
+    }
+    .titleSwiper{
+      height: 80px;
+    }
+    .bodyText{
+      &:first-of-type {
+        margin-top: 10px;
+      }
+      &:not(:last-of-type) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    margin: 120px 0px;
+    min-height: unset;
+    h2{
+      font-size: 56px;
+    }
+    .arrowImage{
+      aspect-ratio: 1;
+      width: 100px;
+      height: 100px;
+    }
+    .titleSwiper{
+      height: 80px;
+    }
+    .bodyText{
+      &:first-of-type {
+        margin-top: 10px;
+      }
+      &:not(:last-of-type) {
+        margin-bottom: 20px;
+      }
+    }
+
+  }
 }

@@ -24,12 +24,36 @@
     object-fit: contain;
   }
   @media screen and (max-width: 520px) {
+    margin: 0;
+    padding: 50px 0;
     .element {
       width: 250px;
       // aspect-ratio: 1;
     }
-    .sliderText{
+    .sliderText {
       font-size: 40px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    margin: 0;
+    padding: 90px 0;
+    .element {
+      width: 450px;
+      // aspect-ratio: 1;
+    }
+    .sliderText {
+      font-size: 60px;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    margin: 50px 0;
+    padding: 100px 0;
+    .element {
+      width: 600px;
+      // aspect-ratio: 1;
+    }
+    .sliderText {
+      font-size: 80px;
     }
   }
 }

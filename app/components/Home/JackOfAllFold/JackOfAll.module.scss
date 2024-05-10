@@ -26,4 +26,24 @@
       }
     }
   }
+  @media screen and (max-width: 520px) {
+    min-height: auto;
+    padding: 50px 0;
+    h2{
+      font-size: 36px;
+    }
+    h3{
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    min-height: auto;
+    padding: 70px 0;
+    h2{
+      font-size: 42px;
+    }
+    h3{
+      font-size: 18px;
+    }
+  }
 }
